@@ -1,0 +1,2 @@
+# homebrew-trantor
+Trantor CLI
