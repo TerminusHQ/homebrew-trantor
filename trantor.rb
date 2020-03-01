@@ -5,7 +5,7 @@ class Trantor < Formula
   version "0.0.1"
   sha256 "d88166a0a5c44ccfdb4b3aa828bffbd998dc2ac44452f2b57ef0e6cd15a81702"
 
-  depends_on "docker"
+#   depends_on "docker"
 
   def buildExe()
     <<~EOS
