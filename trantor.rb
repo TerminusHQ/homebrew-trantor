@@ -1,9 +1,9 @@
 class Trantor < Formula
   desc "Terminus Trantor CLI"
   homepage "https://www.terminus.io/"
-  url "http://mxsl.oss-cn-hangzhou.aliyuncs.com/dist/trantor/trantor.0.0.1.tar.gz"
-  version "0.0.1"
-  sha256 "d88166a0a5c44ccfdb4b3aa828bffbd998dc2ac44452f2b57ef0e6cd15a81702"
+  url "http://mxsl.oss-cn-hangzhou.aliyuncs.com/dist/trantor/trantor.0.0.2.tar.gz"
+  version "0.0.2"
+  sha256 "f2c657e716f122f8aada481c6f31abeae304d3fe2c98e57003d9ba43289d5612"
 
 #   depends_on "docker"
 
