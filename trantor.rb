@@ -3,7 +3,7 @@ class Trantor < Formula
   homepage "https://www.terminus.io/"
   url "http://mxsl.oss-cn-hangzhou.aliyuncs.com/dist/trantor/trantor.0.0.2.tar.gz"
   version "0.0.2"
-  sha256 "1909cf575f9c0af2bde81ce07dd69e609123908f1509a342279dfcf1b126eade"
+  sha256 "ebb14933e222ed020b952e49fdd6d8bb192303af87905ad5e139fd548bbb68d8"
 
 #   depends_on "docker"
 
