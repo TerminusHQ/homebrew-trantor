@@ -1,9 +1,9 @@
 class Trantor < Formula
   desc "Terminus Trantor CLI"
   homepage "https://www.terminus.io/"
-  url "http://mxsl.oss-cn-hangzhou.aliyuncs.com/dist/trantor/trantor.0.16.3.tar.gz"
-  version "0.16.3"
-  sha256 "d1630bbc1f30bcc647876d2694aa74b09bd14adb1b53b05d604cb39ca34b8cb6"
+  url "http://mxsl.oss-cn-hangzhou.aliyuncs.com/dist/trantor/trantor.0.16.4.tar.gz"
+  version "0.16.4"
+  sha256 "dff85d1ab0a276b9c5fd7861573cc8b5976a83ef7a41b4e105e20735398f6fd8"
 
 #   depends_on "docker"
 
@@ -16,7 +16,7 @@ class Trantor < Formula
         JAVACMD="$JAVA_HOME/bin/java"
       fi
       export TRANTOR_HOME="#{prefix}"
-      export TRANTOR_CLI_VERSION="0.16.3"
+      export TRANTOR_CLI_VERSION="0.16.4"
       exec "$JAVACMD" -jar "#{libexec}/trantor-cli.jar" "$@"
     EOS
   end
