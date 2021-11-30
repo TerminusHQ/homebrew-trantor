@@ -1,31 +1,16 @@
 class Trantor < Formula
   desc "Terminus Trantor CLI"
   homepage "https://www.terminus.io/"
-  url "http://mxsl.oss-cn-hangzhou.aliyuncs.com/dist/trantor/trantor.0.18.3.tar.gz"
-  version "0.18.3"
-  sha256 "006ab5ab76d54a5ad2e40fe7f5368b9e435e9cfcedc3f877e85f9db904f5ae44"
-
-#   depends_on "docker"
-
-  def buildExe()
-    <<~EOS
-      #!/bin/bash
-      if [ -z "$JAVA_HOME" ] ; then
-        JAVACMD=`which java`
-      else
-        JAVACMD="$JAVA_HOME/bin/java"
-      fi
-      export TRANTOR_HOME="#{prefix}"
-      export TRANTOR_CLI_VERSION="0.18.3"
-      exec "$JAVACMD" -jar "#{libexec}/trantor-cli.jar" "$@"
-    EOS
-  end
+  url "https://terminus-trantor.oss-cn-hangzhou.aliyuncs.com/tools/cli/trantor-cli.latest.tar.gz"
+  version "1.0.0.RELEASE"
+  sha256 "05d698d24c2a72207affbbcc9ff9eac7f130d60fbb899be9cc559809c59f2975"
 
   def install
     # Remove windows files
-    lib.install Dir["lib/*"]
-    libexec.install Dir["libexec/*"]
-    (bin/"trantor").write buildExe()
+   prefix.install %w[bin conf lib]
+   zsh_completion.install "completions/zsh/_trantor"
+   bash_completion.install "completions/bash/trantor-completion.bash"
+   fish_completion.install "completions/fish/trantor-completion.fish"
   end
 
   test do
