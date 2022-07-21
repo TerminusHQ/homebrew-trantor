@@ -2,8 +2,8 @@ class Trantor < Formula
   desc "Terminus Trantor CLI"
   homepage "https://www.terminus.io/"
   url "https://terminus-trantor.oss-cn-hangzhou.aliyuncs.com/tools/cli/trantor-cli.latest.tar.gz"
-  version "1.0.2.RELEASE"
-  sha256 "ef3ab0e480cf1bb093be76506b0ba6624a906301d20b57a0b76962128b3cea84"
+  version "1.0.3.RELEASE"
+  sha256 "50331c381a845d655f096c8155b1104a3922806239ca62c28c7af554c8907fef"
 
   def install
     # Remove windows files
